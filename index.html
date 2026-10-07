@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game of square</title>
+
+    <title>Square Game</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="main">
-        <div class="box">
-            <div class="rect">
-                <div id="s1" class="shape"><h1>1</h1></div>
-                <div id="s2" class="shape"><h1>2</h1></div>
-            </div>
-            <div class="rect">
-                <div id="s3" class="shape"><h1>3</h1></div>
-                <div id="s4" class="shape"><h1>4</h1></div>
-            </div>
-        </div>
 
-    </div>
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <p class="subtitle">JAVASCRIPT INTERACTION GAME</p>
+            <h1>Square Game</h1>
+            <p class="description">
+                Hover and click the squares to discover different effects.
+            </p>
+        </header>
+
+        <section class="game-board">
+
+            <div class="square-card">
+                <div id="s1" class="shape">
+                    <span class="number">1</span>
+                </div>
+                <h3>Random Number</h3>
+                <p>Hover over the square</p>
+            </div>
+
+            <div class="square-card">
+                <div id="s2" class="shape">
+                    <span class="number">2</span>
+                </div>
+                <h3>Color Cycle</h3>
+                <p>Hover to change color</p>
+            </div>
+
+            <div class="square-card">
+                <div id="s3" class="shape">
+                    <span class="number">3</span>
+                </div>
+                <h3>Random Color</h3>
+                <p>Hover for a new color</p>
+            </div>
+
+            <div class="square-card">
+                <div id="s4" class="shape">
+                    <span class="number">4</span>
+                </div>
+                <h3>Color Blast</h3>
+                <p>Click to change all colors</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </main>
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
